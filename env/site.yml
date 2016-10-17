@@ -16,21 +16,16 @@ description: Apps and Engines when toolkit is run from outside a project.
 # By default make the non-project side of the desktop engine available
 
 engines:
+
   tk-flame:
 
     apps:
-      #
-      # Flame review app that sends a sequence to Shotgun Review
-      #
-      tk-flame-projectcreate:
+      tk-flame-projectconnect:
         location:
-          version: v0.1.0
-          type: manual
-          name: tk-flame-projectcreate
+          version: v0.2.0
+          type: app_store
+          name: tk-flame-projectconnect
 
-    #
-    # Flame engine settings
-    #
     debug_logging: false
     location:
       name: tk-flame
@@ -41,18 +36,17 @@ engines:
     backburner_shared_tmp: /tmp
     run_at_startup: []
     backburner_manager: ''
-    context_menu: [ {app_instance: tk-multi-shotgunpanel, name: ''}]
-    context_menu: [ {app_instance: tk-multi-loader2, name: ''}]
+    context_menu: []
 
 frameworks:
   tk-framework-qtwidgets_v2.x.x:
     location:
-      version: v2.4.1
+      version: v2.5.9
       type: app_store
       name: tk-framework-qtwidgets
   tk-framework-shotgunutils_v4.x.x:
     location:
-      version: v4.4.1
+      version: v4.4.12
       type: app_store
       name: tk-framework-shotgunutils
 

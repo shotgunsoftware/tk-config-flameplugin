@@ -29,9 +29,8 @@ engines:
           name: tk-flame-review
         task_template: ''
         # for higher quality, but wont work in firefox.
-        bypass_shotgun_transcoding: true
+        bypass_shotgun_transcoding: false
         shotgun_entity_type: Sequence
-        bypass_shotgun_transcoding: true
         menu_name: Submit for Shotgun review
         settings_hook: '{self}/settings.py'
 
@@ -61,7 +60,7 @@ engines:
     #
     # Flame engine settings
     #
-    debug_logging: true
+    debug_logging: false
     location:
       name: tk-flame
       version: v1.7.0
@@ -71,18 +70,18 @@ engines:
     backburner_shared_tmp: /tmp
     run_at_startup: []
     backburner_manager: ''
-    context_menu: [ {app_instance: tk-multi-shotgunpanel, name: ''}]
+    context_menu: []
 
 
 frameworks:
   tk-framework-qtwidgets_v2.x.x:
     location:
-      version: v2.4.1
+      version: v2.5.9
       type: app_store
       name: tk-framework-qtwidgets
   tk-framework-shotgunutils_v4.x.x:
     location:
-      version: v4.4.1
+      version: v4.4.12
       type: app_store
       name: tk-framework-shotgunutils
 
