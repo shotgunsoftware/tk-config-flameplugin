@@ -37,6 +37,7 @@ engines:
     run_at_startup: []
     backburner_manager: ''
     context_menu: []
+    project_switching: true
 
 frameworks:
   tk-framework-qtwidgets_v2.x.x:
