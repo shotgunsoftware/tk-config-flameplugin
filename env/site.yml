@@ -22,7 +22,7 @@ engines:
     apps:
       tk-flame-projectconnect:
         location:
-          version: v0.3.1
+          version: v0.3.2
           type: app_store
           name: tk-flame-projectconnect
 
