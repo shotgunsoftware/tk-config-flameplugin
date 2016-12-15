@@ -70,7 +70,9 @@ engines:
     backburner_shared_tmp: /tmp
     run_at_startup: []
     backburner_manager: ''
-    context_menu: []
+    context_menu: [{"name": "Shotgun Panel...", "app_instance": "tk-multi-shotgunpanel", "display_name": "Shotgun Panel"},
+                   {"name": "Launch Shotgun in Web Browser", "app_instance": "tk-flame", "display_name": "Jump to Shotgun"}, # created by engine, so app_instance set to "tk-flame"
+                   {"name": "Log In", "app_instance": "tk-flame"}]  # created by engine, so app_instance set to "tk-flame"
     project_switching: true
 
 
