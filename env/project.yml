@@ -36,7 +36,7 @@ engines:
 
       tk-multi-shotgunpanel:
         location:
-          version: v1.2.7
+          version: v1.2.13
           type: app_store
           name: tk-multi-shotgunpanel
         shotgun_fields_hook: '{self}/shotgun_fields.py'
@@ -63,7 +63,7 @@ engines:
     debug_logging: false
     location:
       name: tk-flame
-      version: v1.7.8
+      version: v1.7.9
       type: app_store
     project_startup_hook: '{self}/project_startup.py'
     flame_batch_publish_type: Flame Batch File
@@ -79,12 +79,12 @@ engines:
 frameworks:
   tk-framework-qtwidgets_v2.x.x:
     location:
-      version: v2.5.9
+      version: v2.5.12
       type: app_store
       name: tk-framework-qtwidgets
   tk-framework-shotgunutils_v4.x.x:
     location:
-      version: v4.4.12
+      version: v4.4.15
       type: app_store
       name: tk-framework-shotgunutils
 
