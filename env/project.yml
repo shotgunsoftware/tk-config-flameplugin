@@ -24,7 +24,7 @@ engines:
       #
       tk-flame-review:
         location:
-          version: v1.1.3
+          version: v1.1.4
           type: app_store
           name: tk-flame-review
         task_template: ''
