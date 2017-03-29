@@ -19,6 +19,16 @@ engines:
   tk-flame:
 
     apps:
+
+      #
+      # Python console app for use of Shotgun and Flame APIs
+      #
+      tk-multi-pythonconsole:
+        location:
+          version: v1.0.9
+          type: app_store
+          name: tk-multi-pythonconsole
+
       #
       # Flame review app that sends a sequence to Shotgun Review
       #
@@ -62,9 +72,8 @@ engines:
     #
     debug_logging: false
     location:
-      name: tk-flame
-      version: v1.8.2
-      type: app_store
+      type: dev
+      path: /DLlocal/t_perema/git/tk-flame
     project_startup_hook: '{self}/project_startup.py'
     flame_batch_publish_type: Flame Batch File
     backburner_shared_tmp: /tmp
