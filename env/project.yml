@@ -72,8 +72,9 @@ engines:
     #
     debug_logging: false
     location:
-      type: dev
-      path: /DLlocal/t_perema/git/tk-flame
+      name: tk-flame
+      version: v1.8.2
+      type: app_store
     project_startup_hook: '{self}/project_startup.py'
     flame_batch_publish_type: Flame Batch File
     backburner_shared_tmp: /tmp
