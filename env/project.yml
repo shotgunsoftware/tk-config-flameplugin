@@ -92,6 +92,11 @@ frameworks:
       version: v2.5.18
       type: app_store
       name: tk-framework-qtwidgets
+  tk-framework-shotgunutils_v4.x.x:
+    location:
+      version: v4.4.15
+      type: app_store
+      name: tk-framework-shotgunutils
   tk-framework-shotgunutils_v5.x.x:
     location:
       version: v5.1.3
