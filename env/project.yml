@@ -17,9 +17,7 @@ description: Apps and Engines when toolkit is run from outside a project.
 
 engines:
   tk-flame:
-
     apps:
-
       #
       # Python console app for use of Shotgun and Flame APIs
       #
@@ -43,10 +41,9 @@ engines:
         shotgun_entity_type: Sequence
         menu_name: Submit for Shotgun review
         settings_hook: '{self}/settings.py'
-
       tk-multi-shotgunpanel:
         location:
-          version: v1.3.3
+          version: v1.4.1
           type: app_store
           name: tk-multi-shotgunpanel
         shotgun_fields_hook: '{self}/shotgun_fields.py'
@@ -66,30 +63,29 @@ engines:
             - quicktime_clipboard
             - sequence_clipboard
             filters: {}
-
     #
     # Flame engine settings
     #
     debug_logging: false
     location:
       name: tk-flame
-      version: v1.8.7
+      version: v1.9.3
       type: app_store
     project_startup_hook: '{self}/project_startup.py'
     flame_batch_publish_type: Flame Batch File
     backburner_shared_tmp: /tmp
     run_at_startup: []
     backburner_manager: ''
-    context_menu: [{"name": "Shotgun Panel...", "app_instance": "tk-multi-shotgunpanel", "display_name": "Shotgun Panel"},
-                   {"name": "Launch Shotgun in Web Browser", "app_instance": "tk-flame", "display_name": "Jump to Shotgun"}, # created by engine, so app_instance set to "tk-flame"
-                   {"name": "Log In", "app_instance": "tk-flame"}]  # created by engine, so app_instance set to "tk-flame"
+    context_menu: [{name: Shotgun Panel..., app_instance: tk-multi-shotgunpanel, display_name: Shotgun
+          Panel}, {name: Launch Shotgun in Web Browser, app_instance: tk-flame, display_name: Jump
+          to Shotgun}, {name: Log In, app_instance: tk-flame}]      # created by engine, so app_instance set to "tk-flame"
     project_switching: true
 
 
 frameworks:
   tk-framework-qtwidgets_v2.x.x:
     location:
-      version: v2.5.18
+      version: v2.6.2
       type: app_store
       name: tk-framework-qtwidgets
   tk-framework-shotgunutils_v4.x.x:
@@ -99,8 +95,6 @@ frameworks:
       name: tk-framework-shotgunutils
   tk-framework-shotgunutils_v5.x.x:
     location:
-      version: v5.1.3
+      version: v5.2.1
       type: app_store
       name: tk-framework-shotgunutils
-
-
