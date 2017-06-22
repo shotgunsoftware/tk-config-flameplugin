@@ -15,13 +15,16 @@ description: Apps and Engines when toolkit is run from outside a project.
 # define all the items that should appear in this environment
 # By default make the non-project side of the desktop engine available
 
+includes:
+- include/defs.yml
+
 engines:
-
   tk-flame:
-
     apps:
-      tk-flame-projectconnect: "@ref_tk-flame-projectconnect"
+      tk-flame-review: '@ref_tk-flame-review'
+      tk-multi-shotgunpanel: '@ref_tk-multi-shotgunpanel'
     location: '@ref_tk-flame_location'
+    context_menu: '@ref_tk_flame_context_menu'
     project_switching: true
 
 frameworks: '@ref_tk-flame_frameworks'
