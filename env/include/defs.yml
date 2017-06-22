@@ -13,6 +13,13 @@ ref_tk-flame_location:
   version: v1.9.3
   type: app_store
 
+ref_tk_flame_context_menu: [
+  { "name" : "Shotgun Panel...", "app_instance": "tk-multi-shotgunpanel", "display_name": "Shotgun Panel"},
+  { "name" : "Load...", "app_instance": "tk-multi-loader2", "display_name": "Shotgun Loader"},
+  { "name" : "Launch Shotgun in Web Browser", "app_instance": "tk-flame", "display_name": "Jump to Shotgun"},
+  { "name" : "Shotgun Python Console...", "app_instance": "tk-multi-pythonconsole", "display_name": "Shotgun Python Console"},
+  { "name" : "Log In" , "app_instance" : "tk-flame" } ] # created by engine, so app_instance set to "tk-flame"
+
 ref_tk-flame-review:
   location:
     version: v1.1.4
@@ -25,70 +32,37 @@ ref_tk-flame-projectconnect:
     type: app_store
     name: tk-flame-projectconnect
 
+ref_tk-multi-pythonconsole:
+  location:
+    version: v1.1.0
+    type: app_store
+    name: tk-multi-pythonconsole
+
 ref_tk-multi-loader2:
   location:
-    version: v1.17.1
+    version: v1.17.3
     type: app_store
     name: tk-multi-loader2
 
 ref_tk-multi-shotgunpanel:
     location:
-      version: v1.4.1
+      version: v1.4.2
       type: app_store
       name: tk-multi-shotgunpanel
-    actions_hook: '{self}/general_actions.py'
-    action_mappings:
-      PublishedFile:
-      - actions:
-        - publish_clipboard
-        filters: {}
-      Task:
-      - actions:
-        - assign_task
-        - task_to_ip
-        filters: {}
-      Version:
-      - actions:
-        - quicktime_clipboard
-        - sequence_clipboard
-        filters: {}
-        
-ref_tk-framework-qtwidgets_v2:
-  location:
-    version: v2.6.2
-    type: app_store
-    name: tk-framework-qtwidgets
 
-ref_tk-framework-shotgunutils_v4:
-  location:
-    version: v4.4.15
-    type: app_store
-    name: tk-framework-shotgunutils
-
-ref_tk-framework-shotgunutils_v5:
-  location:
-    version: v5.2.1
-    type: app_store
-    name: tk-framework-shotgunutils
-
-ref_tk_flame_context_menu: [
-  { "name" : "Shotgun Panel...", "app_instance": "tk-multi-shotgunpanel", "display_name": "Shotgun Panel"}, 
-  { "name" : "Load...", "app_instance": "tk-multi-loader2", "display_name": "Shotgun Loader"},
-  { "name" : "Launch Shotgun in Web Browser", "app_instance": "tk-flame", "display_name": "Jump to Shotgun"}, 
-  { "name" : "Shotgun Python Console...", "app_instance": "tk-multi-pythonconsole", "display_name": "Shotgun Python Console"},
-  { "name" : "Log In" , "app_instance" : "tk-flame" } ] # created by engine, so app_instance set to "tk-flame"
-  
 ref_tk-flame_frameworks:
   tk-framework-qtwidgets_v2.x.x:
     location:
-      version: v2.6.2
+      version: v2.6.3
       type: app_store
       name: tk-framework-qtwidgets
+
   tk-framework-shotgunutils_v4.x.x:
     location:
       version: v4.4.15
       type: app_store
       name: tk-framework-shotgunutils
+
   tk-framework-shotgunutils_v5.x.x:
     location:
       version: v5.2.1

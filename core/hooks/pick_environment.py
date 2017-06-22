@@ -14,8 +14,8 @@ Hook which chooses an environment file to use based on the current context.
 
 from sgtk import Hook
 
-class PickEnvironment(Hook):
 
+class PickEnvironment(Hook):
     def execute(self, context, **kwargs):
         if context.project is None:
             # On Flame startup before a shotgun project is attached.
@@ -27,10 +27,10 @@ class PickEnvironment(Hook):
             flame_version_major = os.environ.get('SHOTGUN_FLAME_MAJOR_VERSION')
             flame_version_minor = os.environ.get('SHOTGUN_FLAME_MINOR_VERSION')
             flame_version_patch = os.environ.get('SHOTGUN_FLAME_PATCH_VERSION')
-            
-            flame_version = ( flame_version_major, flame_version_minor, flame_version_patch )
-                        
-            if flame_version >= ( 2018, 2, 0 ): 
-                return 'project.2018'
-            
+
+            flame_version = (flame_version_major, flame_version_minor, flame_version_patch)
+
+            if flame_version >= (2018, 2, 0):
+                return 'project.2018.2'
+
             return 'project.2018'
