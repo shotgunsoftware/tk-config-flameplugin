@@ -11,18 +11,28 @@
 """
 Hook which chooses an environment file to use based on the current context.
 """
-
+import os
 from sgtk import Hook
 
+
 class PickEnvironment(Hook):
-
     def execute(self, context, **kwargs):
-        """
-        This config only operates in the site context.
-        """
-
         if context.project is None:
+            # On Flame startup before a shotgun project is attached.
             return "site"
 
         else:
-            return "project"
+            flame_major = int(os.environ["SHOTGUN_FLAME_MAJOR_VERSION"])
+            flame_minor = int(os.environ["SHOTGUN_FLAME_MINOR_VERSION"])
+
+            # Beta Users
+            if flame_major > 2018 or (flame_major == 2018 and flame_minor >= 3):
+                return "project.2018.3"
+
+            # First version with the python API
+            elif flame_major == 2018 and flame_minor == 2:
+                return "project.2018.2"
+
+            # 2018.1 and lower versions
+            else:
+                return 'project.2018'

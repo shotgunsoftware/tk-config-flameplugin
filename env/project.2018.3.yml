@@ -11,7 +11,7 @@
 
 description: Apps and Engines when toolkit is run from outside a project.
 
-#################################################################################################
+######################################################cd ###########################################
 # define all the items that should appear in this environment
 # By default make the non-project side of the desktop engine available
 
@@ -21,7 +21,19 @@ includes:
 engines:
   tk-flame:
     apps:
+      tk-flame-review: '@ref_tk-flame-review'
+      tk-multi-loader2: '@ref_tk-multi-loader2'
+      tk-multi-pythonconsole: '@ref_tk-multi-pythonconsole'
+      tk-multi-shotgunpanel: '@ref_tk-multi-shotgunpanel'
       tk-flame-projectconnect: "@ref_tk-flame-projectconnect"
     location: '@ref_tk-flame_location'
+    context_menu: '@ref_tk-flame_context_menu'
+    project_switching: '@ref_tk-flame_project_switching'
+    project_startup_hook: '{self}/project_startup.py'
+    flame_batch_publish_type: '@ref_tk-flame_flame_batch_publish_type'
+    backburner_shared_tmp: '@ref_tk-flame_backburner_shared_tmp'
+    run_at_startup: '@ref_tk-flame_run_at_startup'
+    backburner_manager: '@ref_tk-flame_backburner_manager'
+    debug_logging: '@ref_tk-flame_debug_logging'
 
 frameworks: '@ref_tk-flame_frameworks'

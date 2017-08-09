@@ -21,7 +21,17 @@ includes:
 engines:
   tk-flame:
     apps:
-      tk-flame-projectconnect: "@ref_tk-flame-projectconnect"
+      tk-flame-review: '@ref_tk-flame-review'
+      tk-multi-shotgunpanel: '@ref_tk-multi-shotgunpanel'
     location: '@ref_tk-flame_location'
+    context_menu: '@ref_tk-flame_context_menu'
+    project_switching: '@ref_tk-flame_project_switching'
+    project_startup_hook: '{self}/project_startup.py'
+    flame_batch_publish_type: '@ref_tk-flame_flame_batch_publish_type'
+    backburner_shared_tmp: '@ref_tk-flame_backburner_shared_tmp'
+    run_at_startup: '@ref_tk-flame_run_at_startup'
+    backburner_manager: '@ref_tk-flame_backburner_manager'
+    debug_logging: '@ref_tk-flame_debug_logging'
+
 
 frameworks: '@ref_tk-flame_frameworks'
