@@ -22,8 +22,8 @@ class PickEnvironment(Hook):
             return "site"
 
         else:
-            flame_major = int(os.environ["SHOTGUN_FLAME_MAJOR_VERSION"])
-            flame_minor = int(os.environ["SHOTGUN_FLAME_MINOR_VERSION"])
+            flame_major = int(os.environ.get("SHOTGUN_FLAME_MAJOR_VERSION", 2018))
+            flame_minor = int(os.environ.get("SHOTGUN_FLAME_MINOR_VERSION", 0))
 
             # Beta Users
             if flame_major > 2018 or (flame_major == 2018 and flame_minor >= 3):
