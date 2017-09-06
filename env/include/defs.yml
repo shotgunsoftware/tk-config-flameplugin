@@ -10,7 +10,7 @@
 
 ref_tk-flame_location:
   name: tk-flame
-  version: v1.9.4
+  version: v1.9.5
   type: app_store
 
 ref_tk-flame_debug_logging: false
@@ -42,7 +42,7 @@ ref_tk-flame-review:
 
 ref_tk-flame-projectconnect:
   location:
-    version: v0.3.4
+    version: v0.4.0
     type: app_store
     name: tk-flame-projectconnect
 
