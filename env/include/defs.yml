@@ -10,7 +10,7 @@
 
 ref_tk-flame_location:
   name: tk-flame
-  version: v1.9.5
+  version: v1.9.8
   type: app_store
 
 ref_tk-flame_debug_logging: false
