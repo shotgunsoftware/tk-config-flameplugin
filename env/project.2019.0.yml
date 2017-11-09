@@ -9,11 +9,9 @@
 # not expressly granted therein are reserved by Shotgun Software Inc.
 #
 
-description: Apps and Engines when toolkit is run from outside a project.
+description: Apps and Engines when toolkit is run from Flame 2019 and higher.
 
 #################################################################################################
-# define all the items that should appear in this environment
-# By default make the non-project side of the desktop engine available
 
 includes:
 - include/defs.yml
@@ -22,7 +20,11 @@ engines:
   tk-flame:
     apps:
       tk-flame-review: '@ref_tk-flame-review'
+      tk-flame-projectconnect: "@ref_tk-flame-projectconnect"
+      tk-multi-loader2: '@ref_tk-multi-loader2'
+      tk-multi-publish2: '@ref_tk-multi-publish2'
       tk-multi-shotgunpanel: '@ref_tk-multi-shotgunpanel'
+
     location: '@ref_tk-flame_location'
     context_menu: '@ref_tk-flame_context_menu'
     project_switching: '@ref_tk-flame_project_switching'
@@ -32,6 +34,5 @@ engines:
     run_at_startup: '@ref_tk-flame_run_at_startup'
     backburner_manager: '@ref_tk-flame_backburner_manager'
     debug_logging: '@ref_tk-flame_debug_logging'
-
 
 frameworks: '@ref_tk-flame_frameworks'
