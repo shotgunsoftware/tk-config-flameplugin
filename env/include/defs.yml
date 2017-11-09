@@ -10,8 +10,8 @@
 
 ref_tk-flame_location:
   name: tk-flame
-  version: v1.9.5
   type: app_store
+  version: v1.11.3
 
 ref_tk-flame_debug_logging: false
 ref_tk-flame_project_startup_hook: '{self}/project_startup.py'
@@ -24,13 +24,14 @@ ref_tk-flame_project_switching: true
 ref_tk-flame_context_menu: [
   { name : "Shotgun Panel...", app_instance: "tk-multi-shotgunpanel", display_name: "Shotgun Panel"},
   { name : "Load...", app_instance: "tk-multi-loader2", display_name: "Shotgun Loader"},
+  { name : "Publish...", app_instance: "tk-multi-publish2", display_name: "Shotgun Publisher"},
   { name : "Launch Shotgun in Web Browser", app_instance: "tk-flame", display_name: "Jump to Shotgun"}, # created by engine, so app_instance set to "tk-flame"
   { name : "Shotgun Python Console...", app_instance: "tk-multi-pythonconsole", display_name: "Shotgun Python Console"},
   { name : "Log In" , "app_instance" : "tk-flame" } ] # created by engine, so app_instance set to "tk-flame"
 
 ref_tk-flame-review:
   location:
-    version: v1.1.4
+    version: v1.1.5
     type: app_store
     name: tk-flame-review
   task_template: ''
@@ -48,19 +49,34 @@ ref_tk-flame-projectconnect:
 
 ref_tk-multi-pythonconsole:
   location:
-    version: v1.1.0
+    version: v1.1.1
     type: app_store
     name: tk-multi-pythonconsole
 
 ref_tk-multi-loader2:
   location:
-    version: v1.17.4
+    version: v1.18.0
     type: app_store
     name: tk-multi-loader2
+  actions_hook: '{engine}/tk-multi-loader2/flame_loader_actions.py'
+  action_mappings:
+    Flame Batch File: [load_setup]
+    Flame Quicktime: [load_clip]
+    Flame Render: [load_clip]
+    Flame OpenClip: [load_clip]
+    Photoshop Image: [load_clip]
+    Rendered Image: [load_clip]
+    Image: [load_clip]
+    Movie: [load_clip]
+    Texture: [load_clip]
+  entity_mappings:
+    Shot: [load_batch, create_batch]
+    CutITem: [load_batch, create_batch]
+
 
 ref_tk-multi-shotgunpanel:
   location:
-    version: v1.4.4
+    version: v1.4.8
     type: app_store
     name: tk-multi-shotgunpanel
   shotgun_fields_hook: '{self}/shotgun_fields.py'
@@ -81,10 +97,34 @@ ref_tk-multi-shotgunpanel:
       - sequence_clipboard
       filters: {}
 
+ref_tk-multi-publish2:
+  location:
+    type: app_store
+    version: v1.1.9
+    name: tk-multi-publish2
+  help_url: ""
+  collector: "{engine}/tk-multi-publish2/collector.py"
+  publish_plugins:
+    - name: Create Version
+      hook: "{engine}/tk-multi-publish2/create_version.py"
+      settings: {}
+    - name: Create Published File
+      hook: "{engine}/tk-multi-publish2/publish_file.py"
+      settings: {}
+    - name: Create Cut Item
+      hook: "{engine}/tk-multi-publish2/create_cut_item.py"
+      settings: {}
+    - name: Update Shot
+      hook: "{engine}/tk-multi-publish2/update_shot.py"
+      settings: {}
+    - name: Update Cut Item
+      hook: "{engine}/tk-multi-publish2/update_cut_item.py"
+      settings: {}
+
 ref_tk-flame_frameworks:
   tk-framework-qtwidgets_v2.x.x:
     location:
-      version: v2.6.3
+      version: v2.6.5
       type: app_store
       name: tk-framework-qtwidgets
 
@@ -96,6 +136,6 @@ ref_tk-flame_frameworks:
 
   tk-framework-shotgunutils_v5.x.x:
     location:
-      version: v5.2.1
+      version: v5.2.3
       type: app_store
       name: tk-framework-shotgunutils
