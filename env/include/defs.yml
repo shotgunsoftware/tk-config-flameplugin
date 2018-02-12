@@ -11,7 +11,7 @@
 ref_tk-flame_location:
   name: tk-flame
   type: app_store
-  version: v1.11.4
+  version: v1.11.6
 
 ref_tk-flame_debug_logging: false
 ref_tk-flame_project_startup_hook: '{self}/project_startup.py'
@@ -55,7 +55,7 @@ ref_tk-multi-pythonconsole:
 
 ref_tk-multi-loader2:
   location:
-    version: v1.18.0
+    version: v1.18.3
     type: app_store
     name: tk-multi-loader2
   actions_hook: '{engine}/tk-multi-loader2/flame_loader_actions.py'
@@ -76,7 +76,7 @@ ref_tk-multi-loader2:
 
 ref_tk-multi-shotgunpanel:
   location:
-    version: v1.4.8
+    version: v1.5.2
     type: app_store
     name: tk-multi-shotgunpanel
   shotgun_fields_hook: '{self}/shotgun_fields.py'
@@ -100,10 +100,10 @@ ref_tk-multi-shotgunpanel:
 ref_tk-multi-publish2:
   location:
     type: app_store
-    version: v2.0.2
+    version: v2.0.13
     name: tk-multi-publish2
   help_url: ""
-  collector: "{engine}/tk-multi-publish2/collector.py"
+  collector: "{self}/collector.py:{engine}/tk-multi-publish2/collector.py"
   publish_plugins:
     - name: Create Version
       hook: "{engine}/tk-multi-publish2/create_version.py"
@@ -120,11 +120,12 @@ ref_tk-multi-publish2:
     - name: Update Cut Item
       hook: "{engine}/tk-multi-publish2/update_cut_item.py"
       settings: {}
+  enable_manual_load: False
 
 ref_tk-flame_frameworks:
   tk-framework-qtwidgets_v2.x.x:
     location:
-      version: v2.6.5
+      version: v2.7.0
       type: app_store
       name: tk-framework-qtwidgets
 
@@ -136,6 +137,6 @@ ref_tk-flame_frameworks:
 
   tk-framework-shotgunutils_v5.x.x:
     location:
-      version: v5.2.3
+      version: v5.2.4
       type: app_store
       name: tk-framework-shotgunutils
