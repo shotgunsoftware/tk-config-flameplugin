@@ -25,8 +25,8 @@ class PickEnvironment(Hook):
             flame_major = int(os.environ.get("SHOTGUN_FLAME_MAJOR_VERSION", 2018))
             flame_minor = int(os.environ.get("SHOTGUN_FLAME_MINOR_VERSION", 0))
 
-            if flame_major >= 2019:
-                return "project.2019.0"
+            if flame_major > 2019 or (flame_major == 2019 and flame_minor >= 1):
+                return "project.2019.1"
 
             if flame_major >= 2018 or (flame_major == 2018 and flame_minor >= 3):
                 return "project.2018.3"
