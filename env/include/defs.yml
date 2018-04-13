@@ -11,7 +11,7 @@
 ref_tk-flame_location:
   name: tk-flame
   type: app_store
-  version: v1.11.7
+  version: v1.12.1
 
 ref_tk-flame_debug_logging: false
 ref_tk-flame_project_startup_hook: '{self}/project_startup.py'
@@ -49,7 +49,7 @@ ref_tk-flame-projectconnect:
 
 ref_tk-multi-pythonconsole:
   location:
-    version: v1.1.1
+    version: v1.1.2
     type: app_store
     name: tk-multi-pythonconsole
 
@@ -100,7 +100,7 @@ ref_tk-multi-shotgunpanel:
 ref_tk-multi-publish2:
   location:
     type: app_store
-    version: v2.0.13
+    version: v2.1.0
     name: tk-multi-publish2
   help_url: ""
   collector: "{self}/collector.py:{engine}/tk-multi-publish2/collector.py"
@@ -125,7 +125,7 @@ ref_tk-multi-publish2:
 ref_tk-flame_frameworks:
   tk-framework-qtwidgets_v2.x.x:
     location:
-      version: v2.7.0
+      version: v2.8.0
       type: app_store
       name: tk-framework-qtwidgets
 
@@ -137,6 +137,6 @@ ref_tk-flame_frameworks:
 
   tk-framework-shotgunutils_v5.x.x:
     location:
-      version: v5.3.4
+      version: v5.4.2
       type: app_store
       name: tk-framework-shotgunutils
