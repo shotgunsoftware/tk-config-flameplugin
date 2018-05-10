@@ -11,7 +11,7 @@
 ref_tk-flame_location:
   name: tk-flame
   type: app_store
-  version: v1.12.1
+  version: v1.12.3
 
 ref_tk-flame_debug_logging: false
 ref_tk-flame_project_startup_hook: '{self}/project_startup.py'
@@ -31,7 +31,7 @@ ref_tk-flame_context_menu: [
 
 ref_tk-flame-review:
   location:
-    version: v1.1.5
+    version: v1.1.6
     type: app_store
     name: tk-flame-review
   task_template: ''
@@ -55,7 +55,7 @@ ref_tk-multi-pythonconsole:
 
 ref_tk-multi-loader2:
   location:
-    version: v1.18.3
+    version: v1.18.4
     type: app_store
     name: tk-multi-loader2
   actions_hook: '{engine}/tk-multi-loader2/flame_loader_actions.py'
@@ -100,7 +100,7 @@ ref_tk-multi-shotgunpanel:
 ref_tk-multi-publish2:
   location:
     type: app_store
-    version: v2.1.0
+    version: v2.1.4
     name: tk-multi-publish2
   help_url: ""
   collector: "{self}/collector.py:{engine}/tk-multi-publish2/collector.py"
