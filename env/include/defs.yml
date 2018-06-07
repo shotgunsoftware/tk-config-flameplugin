@@ -11,7 +11,7 @@
 ref_tk-flame_location:
   name: tk-flame
   type: app_store
-  version: v1.13.1
+  version: v1.13.2
 
 ref_tk-flame_debug_logging: false
 ref_tk-flame_project_startup_hook: '{self}/project_startup.py'
@@ -31,7 +31,7 @@ ref_tk-flame_context_menu: [
 
 ref_tk-flame-review:
   location:
-    version: v1.2.1
+    version: v1.2.2
     type: app_store
     name: tk-flame-review
   task_template: ''
@@ -43,7 +43,7 @@ ref_tk-flame-review:
 
 ref_tk-flame-projectconnect:
   location:
-    version: v0.4.1
+    version: v0.4.0
     type: app_store
     name: tk-flame-projectconnect
 
