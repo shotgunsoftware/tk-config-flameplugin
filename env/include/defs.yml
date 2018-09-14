@@ -20,6 +20,7 @@ ref_tk-flame_backburner_shared_tmp: /tmp
 ref_tk-flame_run_at_startup: []
 ref_tk-flame_backburner_manager: ''
 ref_tk-flame_project_switching: true
+ref_tk-flame_media_path_root: ''
 
 ref_tk-flame_context_menu: [
   { name : "Shotgun Panel...", app_instance: "tk-multi-shotgunpanel", display_name: "Shotgun Panel..."},

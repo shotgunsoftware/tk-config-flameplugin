@@ -29,6 +29,7 @@ engines:
     run_at_startup: '@ref_tk-flame_run_at_startup'
     backburner_manager: '@ref_tk-flame_backburner_manager'
     debug_logging: '@ref_tk-flame_debug_logging'
+    media_path_root: '@ref_tk-flame_media_path_root'
 
 
 frameworks: '@ref_tk-flame_frameworks'
