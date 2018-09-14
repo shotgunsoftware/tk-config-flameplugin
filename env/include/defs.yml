@@ -71,8 +71,8 @@ ref_tk-multi-loader2:
     Movie: [load_clip]
     Texture: [load_clip]
   entity_mappings:
-    Shot: [load_batch]
-    CutItem: [load_batch]
+    Shot: [load_batch, create_batch]
+    CutItem: [load_batch, create_batch]
 
 
 ref_tk-multi-shotgunpanel:
