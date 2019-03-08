@@ -28,6 +28,8 @@ engines:
     backburner_shared_tmp: '@ref_tk-flame_backburner_shared_tmp'
     run_at_startup: '@ref_tk-flame_run_at_startup'
     backburner_manager: '@ref_tk-flame_backburner_manager'
+    backburner_servers: '@ref_tk-flame_backburner_servers'
+    backburner_server_group: '@ref_tk-flame_backburner_server_group'
     debug_logging: '@ref_tk-flame_debug_logging'
     media_path_root: '@ref_tk-flame_media_path_root'
 

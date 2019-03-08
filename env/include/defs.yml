@@ -11,15 +11,17 @@
 ref_tk-flame_location:
   name: tk-flame
   type: app_store
-  version: v1.14.7
+  version: v1.14.8
 
 ref_tk-flame_debug_logging: false
 ref_tk-flame_project_startup_hook: '{self}/project_startup.py'
 ref_tk-flame_flame_batch_publish_type: Flame Batch File
-ref_tk-flame_backburner_shared_tmp: /tmp
+ref_tk-flame_backburner_shared_tmp: ''
+ref_tk-flame_backburner_servers: ''
+ref_tk-flame_backburner_server_group: ''
 ref_tk-flame_run_at_startup: []
 ref_tk-flame_backburner_manager: ''
-ref_tk-flame_project_switching: true
+ref_tk-flame_project_switching: True
 ref_tk-flame_media_path_root: ''
 
 ref_tk-flame_context_menu: [
