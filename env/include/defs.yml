@@ -11,7 +11,7 @@
 ref_tk-flame_location:
   name: tk-flame
   type: app_store
-  version: v1.15.1
+  version: v1.15.2
 
 ref_tk-flame_debug_logging: false
 ref_tk-flame_project_startup_hook: '{self}/project_startup.py'
@@ -103,7 +103,7 @@ ref_tk-multi-shotgunpanel:
 ref_tk-multi-publish2:
   location:
     type: app_store
-    version: v2.3.3
+    version: v2.3.4
     name: tk-multi-publish2
   help_url: ""
   collector: "{self}/collector.py:{engine}/tk-multi-publish2/collector.py"
