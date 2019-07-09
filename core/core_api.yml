@@ -17,5 +17,5 @@
 
 location:
   type: app_store
-  version: v0.18.165
+  version: v0.18.167
   name: tk-core
