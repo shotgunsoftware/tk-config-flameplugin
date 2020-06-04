@@ -52,7 +52,7 @@ ref_tk-flame-projectconnect:
 
 ref_tk-multi-pythonconsole:
   location:
-    version: v1.2.2
+    version: v1.2.3
     type: app_store
     name: tk-multi-pythonconsole
 
@@ -103,7 +103,7 @@ ref_tk-multi-shotgunpanel:
 ref_tk-multi-publish2:
   location:
     type: app_store
-    version: v2.5.2
+    version: v2.5.3
     name: tk-multi-publish2
   help_url: ""
   collector: "{self}/collector.py:{engine}/tk-multi-publish2/collector.py"
@@ -140,6 +140,6 @@ ref_tk-flame_frameworks:
 
   tk-framework-shotgunutils_v5.x.x:
     location:
-      version: v5.7.3
+      version: v5.7.4
       type: app_store
       name: tk-framework-shotgunutils
