@@ -21,16 +21,17 @@ ref_tk-flame_backburner_servers: ''
 ref_tk-flame_backburner_server_group: ''
 ref_tk-flame_run_at_startup: []
 ref_tk-flame_backburner_manager: ''
-ref_tk-flame_project_switching: True
+ref_tk-flame_project_switching: true
 ref_tk-flame_media_path_root: ''
 
-ref_tk-flame_context_menu: [
-  { name : "Shotgun Panel...", app_instance: "tk-multi-shotgunpanel", display_name: "Shotgun Panel..."},
-  { name : "Load...", app_instance: "tk-multi-loader2", display_name: "Shotgun Loader..."},
-  { name : "Publish...", app_instance: "tk-multi-publish2", display_name: "Shotgun Publisher..."},
-  { name : "Launch Shotgun in Web Browser", app_instance: "tk-flame", display_name: "Jump to Shotgun"}, # created by engine, so app_instance set to "tk-flame"
-  { name : "Shotgun Python Console...", app_instance: "tk-multi-pythonconsole", display_name: "Shotgun Python Console..."},
-  { name : "Log In" , "app_instance" : "tk-flame" } ] # created by engine, so app_instance set to "tk-flame"
+ref_tk-flame_context_menu: [{name: Shotgun Panel..., app_instance: tk-multi-shotgunpanel,
+    display_name: Shotgun Panel...}, {name: Load..., app_instance: tk-multi-loader2,
+    display_name: Shotgun Loader...}, {name: Publish..., app_instance: tk-multi-publish2,
+    display_name: Shotgun Publisher...}, {name: Launch Shotgun in Web Browser, app_instance: tk-flame,
+    display_name: Jump to Shotgun},
+                                                                                                        # created by engine, so app_instance set to "tk-flame"
+ {name: Shotgun Python Console..., app_instance: tk-multi-pythonconsole, display_name: Shotgun
+      Python Console...}, {name: Log In, app_instance: tk-flame}] # created by engine, so app_instance set to "tk-flame"
 
 ref_tk-flame-review:
   location:
@@ -105,25 +106,25 @@ ref_tk-multi-publish2:
     type: app_store
     version: v2.5.3
     name: tk-multi-publish2
-  help_url: ""
-  collector: "{self}/collector.py:{engine}/tk-multi-publish2/collector.py"
+  help_url: ''
+  collector: '{self}/collector.py:{engine}/tk-multi-publish2/collector.py'
   publish_plugins:
-    - name: Create Version
-      hook: "{engine}/tk-multi-publish2/create_version.py"
-      settings: {}
-    - name: Create Published File
-      hook: "{engine}/tk-multi-publish2/publish_file.py"
-      settings: {}
-    - name: Create Cut Item
-      hook: "{engine}/tk-multi-publish2/create_cut_item.py"
-      settings: {}
-    - name: Update Shot
-      hook: "{engine}/tk-multi-publish2/update_shot.py"
-      settings: {}
-    - name: Update Cut Item
-      hook: "{engine}/tk-multi-publish2/update_cut_item.py"
-      settings: {}
-  enable_manual_load: False
+  - name: Create Version
+    hook: '{engine}/tk-multi-publish2/create_version.py'
+    settings: {}
+  - name: Create Published File
+    hook: '{engine}/tk-multi-publish2/publish_file.py'
+    settings: {}
+  - name: Create Cut Item
+    hook: '{engine}/tk-multi-publish2/create_cut_item.py'
+    settings: {}
+  - name: Update Shot
+    hook: '{engine}/tk-multi-publish2/update_shot.py'
+    settings: {}
+  - name: Update Cut Item
+    hook: '{engine}/tk-multi-publish2/update_cut_item.py'
+    settings: {}
+  enable_manual_load: false
 
 ref_tk-flame_frameworks:
   tk-framework-qtwidgets_v2.x.x:
@@ -140,6 +141,6 @@ ref_tk-flame_frameworks:
 
   tk-framework-shotgunutils_v5.x.x:
     location:
-      version: v5.7.4
+      version: v5.7.6
       type: app_store
       name: tk-framework-shotgunutils
