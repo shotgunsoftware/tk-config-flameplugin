@@ -9,9 +9,9 @@
 # not expressly granted therein are reserved by Shotgun Software Inc.
 
 ref_tk-flame_location:
-  name: tk-flame
-  type: app_store
+  type: dev
   version: v1.15.6
+  path: /hosts/gotham.rmdtl.autodesk.com/mnt/git/gotham/tk-flame-1
 
 ref_tk-flame_debug_logging: false
 ref_tk-flame_project_startup_hook: '{self}/project_startup.py'
@@ -35,9 +35,10 @@ ref_tk-flame_context_menu: [{name: Shotgun Panel..., app_instance: tk-multi-shot
 
 ref_tk-flame-review:
   location:
-    version: v1.3.0
-    type: app_store
-    name: tk-flame-review
+    type: git_branch
+    branch: python-3
+    path: https://github.com/shotgunsoftware/tk-flame-review.git
+    version: 61f25cb790c7aba20a17101a825905b6153a455b
   task_template: ''
   # for higher quality, but wont work in firefox.
   bypass_shotgun_transcoding: false
@@ -47,9 +48,10 @@ ref_tk-flame-review:
 
 ref_tk-flame-projectconnect:
   location:
-    version: v0.4.0
-    type: app_store
-    name: tk-flame-projectconnect
+    type: git_branch
+    branch: python-3
+    path: https://github.com/shotgunsoftware/tk-flame-projectconnect.git
+    version: d2326c3a84e67fd9de305907f3f6940a05de73db
 
 ref_tk-multi-pythonconsole:
   location:
