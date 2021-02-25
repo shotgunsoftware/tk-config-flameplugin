@@ -11,7 +11,7 @@
 ref_tk-flame_location:
   name: tk-flame
   type: app_store
-  version: v1.15.6
+  version: v1.16.0
 
 ref_tk-flame_debug_logging: false
 ref_tk-flame_project_startup_hook: '{self}/project_startup.py'
@@ -35,7 +35,7 @@ ref_tk-flame_context_menu: [{name: Shotgun Panel..., app_instance: tk-multi-shot
 
 ref_tk-flame-review:
   location:
-    version: v1.3.0
+    version: v1.4.1
     type: app_store
     name: tk-flame-review
   task_template: ''
@@ -47,7 +47,7 @@ ref_tk-flame-review:
 
 ref_tk-flame-projectconnect:
   location:
-    version: v0.4.0
+    version: v0.5.1
     type: app_store
     name: tk-flame-projectconnect
 
@@ -133,14 +133,8 @@ ref_tk-flame_frameworks:
       type: app_store
       name: tk-framework-qtwidgets
 
-  tk-framework-shotgunutils_v4.x.x:
-    location:
-      version: v4.4.15
-      type: app_store
-      name: tk-framework-shotgunutils
-
   tk-framework-shotgunutils_v5.x.x:
     location:
-      version: v5.7.10
+      version: v5.7.6
       type: app_store
       name: tk-framework-shotgunutils
