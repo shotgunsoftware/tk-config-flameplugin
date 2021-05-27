@@ -80,7 +80,7 @@ ref_tk-multi-loader2:
 
 ref_tk-multi-shotgunpanel:
   location:
-    version: v1.7.1
+    version: v1.7.2
     type: app_store
     name: tk-multi-shotgunpanel
   shotgun_fields_hook: '{self}/shotgun_fields.py'
