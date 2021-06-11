@@ -11,7 +11,8 @@
 ref_tk-flame_location:
   name: tk-flame
   type: app_store
-  version: v1.16.2
+  version: v1.16.3
+
 ref_tk-flame_debug_logging: false
 ref_tk-flame_project_startup_hook: '{self}/project_startup.py'
 ref_tk-flame_flame_batch_publish_type: Flame Batch File
@@ -33,24 +34,28 @@ ref_tk-flame_context_menu: [{name: ShotGrid Panel..., app_instance: tk-multi-sho
 
 ref_tk-flame-review:
   location:
-    version: v1.4.1
+    version: v1.4.2
     type: app_store
     name: tk-flame-review
   task_template: ''
+  # for higher quality, but wont work in firefox.
   bypass_shotgun_transcoding: false
   shotgun_entity_type: Sequence
   menu_name: Submit for ShotGrid review
   settings_hook: '{self}/settings.py'
+
 ref_tk-flame-projectconnect:
   location:
-    version: v0.5.1
+    version: v0.5.2
     type: app_store
     name: tk-flame-projectconnect
+
 ref_tk-multi-pythonconsole:
   location:
     version: v1.3.0
     type: app_store
     name: tk-multi-pythonconsole
+
 ref_tk-multi-loader2:
   location:
     version: v1.21.0
@@ -70,6 +75,8 @@ ref_tk-multi-loader2:
   entity_mappings:
     Shot: [load_batch, create_batch]
     CutItem: [load_batch, create_batch]
+
+
 ref_tk-multi-shotgunpanel:
   location:
     version: v1.8.0
