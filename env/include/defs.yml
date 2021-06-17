@@ -11,7 +11,7 @@
 ref_tk-flame_location:
   name: tk-flame
   type: app_store
-  version: v1.16.4
+  version: v1.16.5
 
 ref_tk-flame_debug_logging: false
 ref_tk-flame_project_startup_hook: '{self}/project_startup.py'
@@ -34,7 +34,7 @@ ref_tk-flame_context_menu: [{name: ShotGrid Panel..., app_instance: tk-multi-sho
 
 ref_tk-flame-review:
   location:
-    version: v1.4.2
+    version: v1.4.3
     type: app_store
     name: tk-flame-review
   task_template: ''
@@ -46,7 +46,7 @@ ref_tk-flame-review:
 
 ref_tk-flame-projectconnect:
   location:
-    version: v0.5.2
+    version: v0.5.3
     type: app_store
     name: tk-flame-projectconnect
 
@@ -132,6 +132,6 @@ ref_tk-flame_frameworks:
       name: tk-framework-qtwidgets
   tk-framework-shotgunutils_v5.x.x:
     location:
-      version: v5.7.6
+      version: v5.8.0
       type: app_store
       name: tk-framework-shotgunutils
