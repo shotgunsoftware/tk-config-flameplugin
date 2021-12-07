@@ -33,7 +33,7 @@ ref_tk-flame_context_menu: [{name: ShotGrid Panel..., app_instance: tk-multi-sho
 
 ref_tk-flame-review:
   location:
-    version: v1.4.3
+    version: v1.4.4
     type: app_store
     name: tk-flame-review
   task_template: ''
@@ -43,7 +43,7 @@ ref_tk-flame-review:
   settings_hook: '{self}/settings.py'
 ref_tk-flame-projectconnect:
   location:
-    version: v0.5.3
+    version: v0.5.4
     type: app_store
     name: tk-flame-projectconnect
 ref_tk-multi-pythonconsole:
