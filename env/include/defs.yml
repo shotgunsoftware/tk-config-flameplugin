@@ -33,7 +33,7 @@ ref_tk-flame_context_menu: [{name: ShotGrid Panel..., app_instance: tk-multi-sho
 
 ref_tk-flame-review:
   location:
-    version: v1.4.4
+    version: v1.4.5
     type: app_store
     name: tk-flame-review
   task_template: ''
