@@ -96,7 +96,7 @@ ref_tk-multi-shotgunpanel:
 ref_tk-multi-publish2:
   location:
     type: app_store
-    version: v2.6.8
+    version: v2.6.9
     name: tk-multi-publish2
   help_url: ''
   collector: '{self}/collector.py:{engine}/tk-multi-publish2/collector.py'
