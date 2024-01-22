@@ -22,14 +22,9 @@ ref_tk-flame_run_at_startup: []
 ref_tk-flame_backburner_manager: ''
 ref_tk-flame_project_switching: true
 ref_tk-flame_media_path_root: ''
-ref_tk-flame_context_menu: [{name: ShotGrid Panel..., app_instance: tk-multi-shotgunpanel,
-    display_name: ShotGrid Panel...}, {name: Load..., app_instance: tk-multi-loader2,
-    display_name: ShotGrid Loader...}, {name: Publish..., app_instance: tk-multi-publish2,
-    display_name: ShotGrid Publisher...}, {name: Launch ShotGrid in Web Browser, app_instance: tk-flame,
-    display_name: Jump to ShotGrid},
+ref_tk-flame_context_menu: [{name: ShotGrid Panel..., app_instance: tk-multi-shotgunpanel, display_name: ShotGrid Panel...}, {name: Load..., app_instance: tk-multi-loader2, display_name: ShotGrid Loader...}, {name: Publish..., app_instance: tk-multi-publish2, display_name: ShotGrid Publisher...}, {name: Launch ShotGrid in Web Browser, app_instance: tk-flame, display_name: Jump to ShotGrid},
                                                                                                         # created by engine, so app_instance set to "tk-flame"
- {name: ShotGrid Python Console..., app_instance: tk-multi-pythonconsole, display_name: ShotGrid
-      Python Console...}, {name: Log In, app_instance: tk-flame}] # created by engine, so app_instance set to "tk-flame"
+ {name: ShotGrid Python Console..., app_instance: tk-multi-pythonconsole, display_name: ShotGrid Python Console...}, {name: Log In, app_instance: tk-flame}] # created by engine, so app_instance set to "tk-flame"
 
 ref_tk-flame-review:
   location:
@@ -120,7 +115,7 @@ ref_tk-multi-publish2:
 ref_tk-flame_frameworks:
   tk-framework-qtwidgets_v2.x.x:
     location:
-      version: v2.10.10
+      version: v2.10.11
       type: app_store
       name: tk-framework-qtwidgets
   tk-framework-shotgunutils_v5.x.x:
