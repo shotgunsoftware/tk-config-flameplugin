@@ -67,7 +67,7 @@ ref_tk-multi-loader2:
     CutItem: [load_batch, create_batch]
 ref_tk-multi-shotgunpanel:
   location:
-    version: v1.8.8
+    version: v1.8.9
     type: app_store
     name: tk-multi-shotgunpanel
   shotgun_fields_hook: '{self}/shotgun_fields.py'
