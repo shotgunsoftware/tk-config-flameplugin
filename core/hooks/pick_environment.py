@@ -18,7 +18,7 @@ from sgtk import Hook
 class PickEnvironment(Hook):
     def execute(self, context, **kwargs):
         if context.project is None:
-            # On Flame startup before a ShotGrid project is attached.
+            # On Flame startup before a Flow Production Tracking project is attached.
             return "site"
 
         else:
