@@ -12,7 +12,7 @@ ref_tk-flame_location:
   type: git_branch
   path: https://github.com/shotgunsoftware/tk-flame.git
   branch: ticket/SG-34295-rebranding
-  version: 9d89b1ce42f7259dcc30e85f7ed31d2b8a1ec47f
+  version: 0f95d5edcecc91603b4a4ae60326dc2fee83883c
 ref_tk-flame_debug_logging: false
 ref_tk-flame_project_startup_hook: '{self}/project_startup.py'
 ref_tk-flame_flame_batch_publish_type: Flame Batch File
@@ -28,10 +28,11 @@ ref_tk-flame_context_menu: [{name: Flow Production Tracking Panel..., app_instan
  {name: Flow Production Tracking Python Console..., app_instance: tk-multi-pythonconsole, display_name: Flow Production Tracking Python Console...}, {name: Log In, app_instance: tk-flame}] # created by engine, so app_instance set to "tk-flame"
 
 ref_tk-flame-review:
-  type: git_branch
-  path: https://github.com/shotgunsoftware/tk-flame-review.git
-  branch: ticket/SG-34295-rebranding
-  version: 9d89b1ce42f7259dcc30e85f7ed31d2b8a1ec47f
+  location:
+    type: git_branch
+    path: https://github.com/shotgunsoftware/tk-flame-review.git
+    branch: ticket/SG-34295-rebranding
+    version: 7118851d69e8e87faaf29c6635cb9c7be32e86d0
   task_template: ''
   bypass_shotgun_transcoding: false
   shotgun_entity_type: Sequence
@@ -39,10 +40,10 @@ ref_tk-flame-review:
   settings_hook: '{self}/settings.py'
 ref_tk-flame-projectconnect:
   location:
-  type: git_branch
-  path: https://github.com/shotgunsoftware/tk-flame-projectconnect.git
-  branch: ticket/SG-34295-rebranding
-  version: 9d89b1ce42f7259dcc30e85f7ed31d2b8a1ec47f
+    type: git_branch
+    path: https://github.com/shotgunsoftware/tk-flame-projectconnect.git
+    branch: ticket/SG-34295-rebranding
+    version: b24d56295b10658f3c00e3c454836fa5273ba028
 ref_tk-multi-pythonconsole:
   location:
     type: git_branch
