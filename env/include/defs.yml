@@ -9,9 +9,10 @@
 # not expressly granted therein are reserved by Shotgun Software Inc.
 
 ref_tk-flame_location:
-  name: tk-flame
-  type: app_store
-  version: v.18.0
+  type: git_branch
+  path: https://github.com/shotgunsoftware/tk-flame.git
+  branch: ticket/SG-34295-rebranding
+  version: 9d89b1ce42f7259dcc30e85f7ed31d2b8a1ec47f
 ref_tk-flame_debug_logging: false
 ref_tk-flame_project_startup_hook: '{self}/project_startup.py'
 ref_tk-flame_flame_batch_publish_type: Flame Batch File
@@ -27,10 +28,10 @@ ref_tk-flame_context_menu: [{name: Flow Production Tracking Panel..., app_instan
  {name: Flow Production Tracking Python Console..., app_instance: tk-multi-pythonconsole, display_name: Flow Production Tracking Python Console...}, {name: Log In, app_instance: tk-flame}] # created by engine, so app_instance set to "tk-flame"
 
 ref_tk-flame-review:
-  location:
-    version: v1.4.6
-    type: app_store
-    name: tk-flame-review
+  type: git_branch
+  path: https://github.com/shotgunsoftware/tk-flame-review.git
+  branch: ticket/SG-34295-rebranding
+  version: 9d89b1ce42f7259dcc30e85f7ed31d2b8a1ec47f
   task_template: ''
   bypass_shotgun_transcoding: false
   shotgun_entity_type: Sequence
@@ -38,19 +39,22 @@ ref_tk-flame-review:
   settings_hook: '{self}/settings.py'
 ref_tk-flame-projectconnect:
   location:
-    version: v0.5.6
-    type: app_store
-    name: tk-flame-projectconnect
+  type: git_branch
+  path: https://github.com/shotgunsoftware/tk-flame-projectconnect.git
+  branch: ticket/SG-34295-rebranding
+  version: 9d89b1ce42f7259dcc30e85f7ed31d2b8a1ec47f
 ref_tk-multi-pythonconsole:
   location:
-    version: v1.3.2
-    type: app_store
-    name: tk-multi-pythonconsole
+    type: git_branch
+    path: https://github.com/shotgunsoftware/tk-multi-pythonconsole.git
+    branch: ticket/SG-34329-rebranding
+    version: dc3654134436d28b5be84fbfe8b3fc633c77be0d
 ref_tk-multi-loader2:
   location:
-    version: v1.23.3
-    type: app_store
-    name: tk-multi-loader2
+    type: git_branch
+    path: https://github.com/shotgunsoftware/tk-multi-loader2.git
+    branch: ticket/SG-34326-rebranding
+    version: d6da28a359d49c5d6cba89937d02e32fac711388
   actions_hook: '{engine}/tk-multi-loader2/flame_loader_actions.py'
   action_mappings:
     Flame Batch File: [load_setup]
@@ -67,9 +71,10 @@ ref_tk-multi-loader2:
     CutItem: [load_batch, create_batch]
 ref_tk-multi-shotgunpanel:
   location:
-    version: v1.8.10
-    type: app_store
-    name: tk-multi-shotgunpanel
+    type: git_branch
+    path: https://github.com/shotgunsoftware/tk-multi-shotgunpanel.git
+    branch: ticket/SG-34335-rebranding
+    version: 684d724d52e5ee9bb3b30bb351f13a598f6a8cec
   shotgun_fields_hook: '{self}/shotgun_fields.py'
   actions_hook: '{self}/general_actions.py'
   action_mappings:
@@ -90,9 +95,10 @@ ref_tk-multi-shotgunpanel:
 
 ref_tk-multi-publish2:
   location:
-    type: app_store
-    version: v2.6.9
-    name: tk-multi-publish2
+    type: git_branch
+    path: https://github.com/shotgunsoftware/tk-multi-publish2.git
+    branch: ticket/SG-34328-rebranding
+    version: 05d8c05a9930fcf44b6ae433cbeabb520fd2500c
   help_url: ''
   collector: '{self}/collector.py:{engine}/tk-multi-publish2/collector.py'
   publish_plugins:
@@ -115,11 +121,13 @@ ref_tk-multi-publish2:
 ref_tk-flame_frameworks:
   tk-framework-qtwidgets_v2.x.x:
     location:
-      version: v2.10.11
-      type: app_store
-      name: tk-framework-qtwidgets
+      type: git_branch
+      path: https://github.com/shotgunsoftware/tk-framework-qtwidgets.git
+      branch: ticket/SG-34303-rebranding
+      version: 25d6fb4ab99384aed91bcdf7beaffcbc77062680
   tk-framework-shotgunutils_v5.x.x:
     location:
-      version: v5.8.8
-      type: app_store
-      name: tk-framework-shotgunutils
+      type: git_branch
+      path: https://github.com/shotgunsoftware/tk-framework-shotgunutils.git
+      branch: ticket/SG-34304-rebranding
+      version: 1aaf07bb1c660ae3fa9d0a2bf8ca986c5c680242

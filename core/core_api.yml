@@ -16,6 +16,7 @@
 # this
 
 location:
-  type: app_store
-  version: v0.20.35
-  name: tk-core
+  type: git_branch
+  path: https://github.com/shotgunsoftware/tk-core.git
+  branch: ticket/SG-34066-rebranding
+  version: 9d89b1ce42f7259dcc30e85f7ed31d2b8a1ec47f
