@@ -43,7 +43,7 @@ ref_tk-flame-projectconnect:
     type: git_branch
     path: https://github.com/shotgunsoftware/tk-flame-projectconnect.git
     branch: ticket/SG-34295-rebranding
-    version: b24d56295b10658f3c00e3c454836fa5273ba028
+    version: 4caa3a4715e0c73f8a4401ca3f3a96087d5b9dc3
 ref_tk-multi-pythonconsole:
   location:
     type: git_branch
