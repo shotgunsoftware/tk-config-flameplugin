@@ -28,7 +28,7 @@ ref_tk-flame_context_menu: [{name: Flow Production Tracking Panel..., app_instan
 
 ref_tk-flame-review:
   location:
-    version: v1.4.6
+    version: v1.5.0
     type: app_store
     name: tk-flame-review
   task_template: ''
