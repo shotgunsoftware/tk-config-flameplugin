@@ -120,6 +120,6 @@ ref_tk-flame_frameworks:
       name: tk-framework-qtwidgets
   tk-framework-shotgunutils_v5.x.x:
     location:
-      version: v5.8.8
+      version: v5.9.0
       type: app_store
       name: tk-framework-shotgunutils
