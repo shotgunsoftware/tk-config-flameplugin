@@ -22,9 +22,9 @@ ref_tk-flame_run_at_startup: []
 ref_tk-flame_backburner_manager: ''
 ref_tk-flame_project_switching: true
 ref_tk-flame_media_path_root: ''
-ref_tk-flame_context_menu: [{name: ShotGrid Panel..., app_instance: tk-multi-shotgunpanel, display_name: ShotGrid Panel...}, {name: Load..., app_instance: tk-multi-loader2, display_name: ShotGrid Loader...}, {name: Publish..., app_instance: tk-multi-publish2, display_name: ShotGrid Publisher...}, {name: Launch ShotGrid in Web Browser, app_instance: tk-flame, display_name: Jump to ShotGrid},
+ref_tk-flame_context_menu: [{name: Flow Production Tracking Panel..., app_instance: tk-multi-shotgunpanel, display_name: Flow Production Tracking Panel...}, {name: Load..., app_instance: tk-multi-loader2, display_name: Flow Production Tracking Loader...}, {name: Publish..., app_instance: tk-multi-publish2, display_name: Flow Production Tracking Publisher...}, {name: Launch Flow Production Tracking in Web Browser, app_instance: tk-flame, display_name: Jump to Flow Production Tracking},
                                                                                                         # created by engine, so app_instance set to "tk-flame"
- {name: ShotGrid Python Console..., app_instance: tk-multi-pythonconsole, display_name: ShotGrid Python Console...}, {name: Log In, app_instance: tk-flame}] # created by engine, so app_instance set to "tk-flame"
+ {name: Flow Production Tracking Python Console..., app_instance: tk-multi-pythonconsole, display_name: Flow Production Tracking Python Console...}, {name: Log In, app_instance: tk-flame}] # created by engine, so app_instance set to "tk-flame"
 
 ref_tk-flame-review:
   location:
@@ -34,7 +34,7 @@ ref_tk-flame-review:
   task_template: ''
   bypass_shotgun_transcoding: false
   shotgun_entity_type: Sequence
-  menu_name: Submit for ShotGrid review
+  menu_name: Submit for Flow Production Tracking review
   settings_hook: '{self}/settings.py'
 ref_tk-flame-projectconnect:
   location:
