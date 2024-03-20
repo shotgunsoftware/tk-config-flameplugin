@@ -43,7 +43,7 @@ ref_tk-flame-projectconnect:
     name: tk-flame-projectconnect
 ref_tk-multi-pythonconsole:
   location:
-    version: v1.3.2
+    version: v1.4.0
     type: app_store
     name: tk-multi-pythonconsole
 ref_tk-multi-loader2:
