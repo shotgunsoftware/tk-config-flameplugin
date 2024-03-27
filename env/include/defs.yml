@@ -115,7 +115,7 @@ ref_tk-multi-publish2:
 ref_tk-flame_frameworks:
   tk-framework-qtwidgets_v2.x.x:
     location:
-      version: v2.11.0
+      version: v2.11.1
       type: app_store
       name: tk-framework-qtwidgets
   tk-framework-shotgunutils_v5.x.x:
