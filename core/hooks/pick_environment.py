@@ -37,4 +37,4 @@ class PickEnvironment(Hook):
 
             # 2018.1 and lower versions
             else:
-                return 'project.2018.0'
+                return "project.2018.0"
