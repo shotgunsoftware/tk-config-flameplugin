@@ -22,7 +22,7 @@ ref_tk-flame_run_at_startup: []
 ref_tk-flame_backburner_manager: ''
 ref_tk-flame_project_switching: true
 ref_tk-flame_media_path_root: ''
-ref_tk-flame_context_menu: [{name: Flow Production Tracking Panel..., app_instance: tk-multi-shotgunpanel, display_name: Flow Production Tracking Panel...}, {name: Load..., app_instance: tk-multi-loader2, display_name: Flow Production Tracking Loader...}, {name: Publish..., app_instance: tk-multi-publish2, display_name: Flow Production Tracking Publisher...}, {name: Launch Flow Production Tracking in Web Browser, app_instance: tk-flame, display_name: Jump to Flow Production Tracking},
+ref_tk-flame_context_menu: [{name: Open Flow Production Tracking Panel..., app_instance: tk-multi-shotgunpanel, display_name: Open Flow Production Tracking Panel...}, {name: Open Loader..., app_instance: tk-multi-loader2, display_name: Open Flow Production Tracking Loader...}, {name: Open Publisher..., app_instance: tk-multi-publish2, display_name: Open Flow Production Tracking Publisher...}, {name: Launch Flow Production Tracking in Web Browser, app_instance: tk-flame, display_name: Jump to Flow Production Tracking},
                                                                                                         # created by engine, so app_instance set to "tk-flame"
  {name: Flow Production Tracking Python Console..., app_instance: tk-multi-pythonconsole, display_name: Flow Production Tracking Python Console...}, {name: Log In, app_instance: tk-flame}] # created by engine, so app_instance set to "tk-flame"
 
