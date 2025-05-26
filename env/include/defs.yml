@@ -39,9 +39,9 @@ ref_tk-flame_context_menu: [
     display_name: 'Open Flow Production Tracking Publisher...'
   },
   {
-    name: Launch Flow Production Tracking in Web Browser,
+    name: 'Launch Flow Production Tracking in Web Browser',
     app_instance: tk-flame,
-    display_name: Jump to Flow Production Tracking
+    display_name: 'Jump to Flow Production Tracking'
   },
   {
     name: 'Flow Production Tracking Python Console...',
