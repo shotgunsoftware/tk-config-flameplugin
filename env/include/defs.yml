@@ -24,19 +24,19 @@ ref_tk-flame_project_switching: true
 ref_tk-flame_media_path_root: ''
 ref_tk-flame_context_menu: [
   {
-    name: Flow Production Tracking Panel...,
+    name: 'Flow Production Tracking Panel...',
     app_instance: tk-multi-shotgunpanel,
-    display_name: Open Flow Production Tracking Panel...
+    display_name: 'Open Flow Production Tracking Panel...'
   },
   {
-    name: Load...,
+    name: 'Load...',
     app_instance: tk-multi-loader2,
-    display_name: Open Flow Production Tracking Loader...
+    display_name: 'Open Flow Production Tracking Loader...'
   },
   {
-    name: Publish...,
+    name: 'Publish...',
     app_instance: tk-multi-publish2,
-    display_name: Open Flow Production Tracking Publisher...
+    display_name: 'Open Flow Production Tracking Publisher...'
   },
   {
     name: Launch Flow Production Tracking in Web Browser,
@@ -44,12 +44,12 @@ ref_tk-flame_context_menu: [
     display_name: Jump to Flow Production Tracking
   },
   {
-    name: Flow Production Tracking Python Console...,
+    name: 'Flow Production Tracking Python Console...',
     app_instance: tk-multi-pythonconsole,
-    display_name: Flow Production Tracking Python Console...
+    display_name: 'Flow Production Tracking Python Console...'
   },
   {
-    name: Log In,
+    name: 'Log In',
     app_instance: tk-flame # created by engine, so app_instance set to "tk-flame"
   }
 ]
