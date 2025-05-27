@@ -50,7 +50,8 @@ ref_tk-flame_context_menu: [
   },
   {
     name: 'Log In',
-    app_instance: tk-flame # created by engine, so app_instance set to "tk-flame"
+    # created by engine, so app_instance set to "tk-flame"
+    app_instance: tk-flame
   }
 ]
 ref_tk-flame-review:
