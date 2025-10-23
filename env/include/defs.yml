@@ -36,7 +36,7 @@ ref_tk-flame-review:
   settings_hook: '{self}/settings.py'
 ref_tk-flame-projectconnect:
   location:
-    version: v0.6.0
+    version: v0.6.1
     type: app_store
     name: tk-flame-projectconnect
 ref_tk-multi-pythonconsole:
