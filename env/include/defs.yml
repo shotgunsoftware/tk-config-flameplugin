@@ -22,38 +22,8 @@ ref_tk-flame_run_at_startup: []
 ref_tk-flame_backburner_manager: ''
 ref_tk-flame_project_switching: true
 ref_tk-flame_media_path_root: ''
-ref_tk-flame_context_menu: [
-  {
-    name: 'Flow Production Tracking Panel...',
-    app_instance: tk-multi-shotgunpanel,
-    display_name: 'Open Flow Production Tracking Panel...'
-  },
-  {
-    name: 'Load...',
-    app_instance: tk-multi-loader2,
-    display_name: 'Open Flow Production Tracking Loader...'
-  },
-  {
-    name: 'Publish...',
-    app_instance: tk-multi-publish2,
-    display_name: 'Open Flow Production Tracking Publisher...'
-  },
-  {
-    name: 'Launch Flow Production Tracking in Web Browser',
-    app_instance: tk-flame,
-    display_name: 'Jump to Flow Production Tracking'
-  },
-  {
-    name: 'Flow Production Tracking Python Console...',
-    app_instance: tk-multi-pythonconsole,
-    display_name: 'Flow Production Tracking Python Console...'
-  },
-  {
-    name: 'Log In',
-    # created by engine, so app_instance set to "tk-flame"
-    app_instance: tk-flame
-  }
-]
+ref_tk-flame_context_menu: [{name: Flow Production Tracking Panel..., app_instance: tk-multi-shotgunpanel, display_name: Open Flow Production Tracking Panel...}, {name: Load..., app_instance: tk-multi-loader2, display_name: Open Flow Production Tracking Loader...}, {name: Publish..., app_instance: tk-multi-publish2, display_name: Open Flow Production Tracking Publisher...}, {name: Launch Flow Production Tracking in Web Browser, app_instance: tk-flame, display_name: Jump to Flow Production 
+      Tracking}, {name: Flow Production Tracking Python Console..., app_instance: tk-multi-pythonconsole, display_name: Flow Production Tracking Python Console...}, {name: Log In, app_instance: tk-flame}]
 ref_tk-flame-review:
   location:
     version: v1.5.5
@@ -119,7 +89,7 @@ ref_tk-multi-shotgunpanel:
 ref_tk-multi-publish2:
   location:
     type: app_store
-    version: v2.10.5
+    version: v2.10.6
     name: tk-multi-publish2
   help_url: ''
   collector: '{self}/collector.py:{engine}/tk-multi-publish2/collector.py'
