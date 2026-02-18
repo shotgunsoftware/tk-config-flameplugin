@@ -11,6 +11,7 @@
 """
 Hook which chooses an environment file to use based on the current context.
 """
+
 import os
 from sgtk import Hook
 
