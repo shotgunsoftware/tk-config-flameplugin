@@ -43,7 +43,7 @@ ref_tk-flame_context_menu:
   app_instance: tk-flame
 ref_tk-flame-review:
   location:
-    version: v1.5.5
+    version: v1.5.6
     type: app_store
     name: tk-flame-review
   task_template: ''
